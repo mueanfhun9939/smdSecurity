@@ -1,0 +1,16 @@
+@import './breakpoints/breakpoints.scss';
+
+$primary-color: #121435;
+$second-color: #FFCC00;
+
+.layer {
+  @include media("<=phone"){
+    color: $second-color
+  }
+
+  @include media(">phone","<=425px"){
+    color: $primary-color
+  }
+
+}
+

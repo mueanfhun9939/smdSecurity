@@ -1,3 +1,21 @@
+@import './breakpoints/breakpoints.scss';
+
+$primary-color: #121435;
+$second-color: #FFCC00;
+
+.appbar {
+  @media (min-width: 320px) and (max-width: 767px) {
+    background-color: $primary-color;
+    min-height: 78px;
+  }
+
+  @media (min-width: 768px){
+    background-color: $primary-color;
+    min-height: 169px;
+  }
+
+}
+
 .container {
   padding: 0 2rem;
 }
