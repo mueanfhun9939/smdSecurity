@@ -1,19 +1,128 @@
-@import './breakpoints/breakpoints.scss';
+@import "./breakpoints/breakpoints.scss";
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
 
 $primary-color: #121435;
-$second-color: #FFCC00;
+$second-color: #ffcc00;
 
 .appbar {
-  @media (min-width: 320px) and (max-width: 767px) {
-    background-color: $primary-color;
+  background-color: $primary-color;
+  font-family: Rancho;
+  .logoname {
+    font-family: Rancho;
+    color: $second-color;
+  }
+
+  .boxcontact {
+    padding: "10px";
+  }
+
+  .boxmanu {
+    position: absolute;
+    width: 75%;
+    height: 78px;
+    left: 15%;
+    top: 140px;
+
+    background: #ffcc00;
+  }
+
+  .textmanu {
+      font-size: 40px;
+      margin-left: 8%;
+      
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
     min-height: 78px;
+    .logo {
+      width: 57px;
+      height: 68px;
+    }
+    .logoname {
+      font-size: 19px;
+    }
+
+    .boxcontact {
+      display: none;
+    }
+
+    .boxmanu {
+      height: 55px;
+      top: 65px;
+      width: 85%;
+      padding: 5%;
+    }
+
+    .textmanu {
+      font-size: 20px;
+      margin-left: 5px;
+  }
   }
 
-  @media (min-width: 768px){
-    background-color: $primary-color;
+  @media (min-width: 768px) and (max-width: 900px) {
+    min-height: 78px;
+    .logo {
+      width: 57px;
+      height: 68px;
+    }
+    .logoname {
+      font-size: 19px;
+    }
+
+    .boxcontact {
+      display: none;
+    }
+
+    .boxmanu {
+      height: 65px;
+      top: 65px;
+      width: 85%;
+    }
+
+    .textmanu {
+      font-size: 30px;
+      margin: 0;
+      margin-left: 7%;
+  }
+  }
+
+  @media (min-width: 901px) and (max-width: 1080px) {
     min-height: 169px;
+    .logo {
+      width: 90px;
+      height: 113px;
+    }
+    .logoname {
+      font-size: 25px;
+    }
+    .iconcontect {
+      font-size: 40px;
+      color: #ffcc00;
+    }
+    .textcontect {
+      font-size: 15px;
+      font-family: Rancho;
+    }
   }
 
+  @media (min-width: 1081px) {
+    min-height: 169px;
+    .logo {
+      width: 114px;
+      height: 135px;
+    }
+    .logoname {
+      font-size: 40px;
+    }
+    .iconcontect {
+      font-size: 53px;
+      color: #ffcc00;
+    }
+    .textcontect {
+      font-size: 24px;
+      font-family: Rancho;
+    }
+  }
 }
 
 .container {
